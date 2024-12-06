@@ -1,17 +1,28 @@
 <?php
     class Inscricao {
+        private $ID_inscricao;
         private $nome;
         private $curso;
         private $periodo;
         private $numeroPessoas;
         private $residencia;
-        private $programaSociais;
+        private $programaSociaisBF;
+        private $programaSociaisLOAS;
+        private $programaSociaisAR;
+        private $programaSociaisJA;
+        private $programaSociaisPM;
+        private $programaSociaisTS;
         private $responsaveis;
         private $numeroagencia;
         private $numeroconta;
         private $telefone;
         private $situacao;
-        private $auxilios;
+        private $auxiliosAlimentacao;
+        private $auxiliosTransporte;
+        private $auxiliosMoradia;
+        private $auxiliosSaude;
+        private $auxiliosCreche;
+        private $auxiliosMaterial;
         private $imagemRG;
         private $imagemCPF;
         private $idcomprovanterenda;
@@ -23,6 +34,15 @@
             
         }
         //get&set
+
+        function getIDinscricao() {
+            return $this->ID_inscricao;
+        }
+
+        function setIDinscricao($ID_inscricao) {
+            $this->ID_inscricao = $ID_inscricao;
+        }
+
         function getNome(){
             return $this -> nome;
         }
@@ -58,13 +78,49 @@
             $this -> residencia = $residencia;
         }
 
-        function getProgramaSociais(){
-            return $this -> programaSociais;
+        function getProgramaSociaisBF(){
+            return $this -> programaSociaisBF;
         }
-        function setProgramaSociais($programaSociais){
-            $this -> programaSociais = $programaSociais;
+
+        function setProgramaSociaisBF($programaSociaisBF){
+            $this -> programaSociaisBF = $programaSociaisBF;
         }
         
+        function getProgramaSociaisLOAS(){
+            return $this -> programaSociaisLOAS;
+        }
+        function getProgramaSociaisAR(){
+            return $this -> programaSociaisAR;
+        }
+        function getProgramaSociaisJA(){
+            return $this -> programaSociaisJA;
+        }
+        function getProgramaSociaisPM(){
+            return $this -> programaSociaisPM;
+        }
+        function getProgramaSociaisTS(){
+            return $this -> programaSociaisTS;
+        }
+
+       
+        
+        function setProgramaSociaisLOAS($programaSociaisLOAS){
+            $this -> programaSociaisLOAS = $programaSociaisLOAS;
+        }
+
+        function setProgramaSociaisAR($programaSociaisAR){
+            $this -> programaSociaisAR = $programaSociaisAR;
+        }
+
+        function setProgramaSociaisJA($programaSociaisJA){
+            $this -> programaSociaisJA = $programaSociaisJA;
+        }
+        function setProgramaSociaisPM($programaSociaisPM){
+            $this -> programaSociaisPM = $programaSociaisPM;
+        }
+        function setProgramaSociaisTS($programaSociaisTS){
+            $this -> programaSociaisTS = $programaSociaisTS;
+        }
         function getResponsaveis(){
             return $this -> responsaveis;
         }
@@ -100,13 +156,42 @@
             $this -> situacao = $situacao;
         }
 
-        function getAuxilios(){
-            return $this -> auxilios;
+        function getAuxiliosAlimentacao(){
+            return $this -> auxiliosAlimentacao;
         }
-        function setAuxilios($auxilios){
-            $this -> auxilios = $auxilios;
+        function getAuxiliosTransporte(){
+            return $this -> auxiliosTransporte;
         }
-
+        function getAuxiliosMoradia(){
+            return $this -> auxiliosMoradia;
+        }
+        function getAuxiliosSaude(){
+            return $this -> auxiliosSaude;
+        }
+        function getAuxiliosCreche(){
+            return $this -> auxiliosCreche;
+        }
+        function getAuxiliosMaterial(){
+            return $this -> auxiliosMaterial;
+        }
+        function setAuxiliosAlimentacao($auxiliosAlimentacao){
+            $this -> auxiliosAlimentacao = $auxiliosAlimentacao;
+        }
+        function setAuxiliosTransporte($auxiliosTransporte){
+            $this -> auxiliosTransporte = $auxiliosTransporte;
+        }
+        function setAuxiliosMoradia($auxiliosMoradia){
+            $this -> auxiliosMoradia = $auxiliosMoradia;
+        }
+        function setAuxiliosSaude($auxiliosSaude){
+            $this -> auxiliosSaude = $auxiliosSaude;
+        }
+        function setAuxiliosCreche($auxiliosCreche){
+            $this -> auxiliosCreche = $auxiliosCreche;
+        }
+        function setAuxiliosMaterial($auxiliosMaterial){
+            $this -> auxiliosMaterial = $auxiliosMaterial;
+        }
         function getImagemRG(){
             return $this -> imagemRG;
         }
@@ -148,6 +233,8 @@
         function setTermocompromisso($termocompromisso){
             $this -> termocompromisso = $termocompromisso;
         }
+
+
         //fim do get&set
     }
 ?>
